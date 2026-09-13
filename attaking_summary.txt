@@ -1,0 +1,167 @@
+Attack Results Summary
+--------------------------------------------------
+Number of successful attacks: 19
+Number of failed attacks: 1
+Success rate: 95.00%
+Average word modification rate: 18.18%
+
+Detailed Results:
+--------------------------------------------------
+
+Example 1:
+Original: <AttackedText "This movie is great and amazing!">
+Original sentiment: POSITIVE (0.9999)
+Status: FAILED
+--------------------------------------------------
+
+Example 2:
+Original: <AttackedText "This was a terrible waste of time.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "This was a towering jingles of date.">
+Perturbed sentiment: POSITIVE (0.9967)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 3:
+Original: <AttackedText "I really enjoyed watching this film.">
+Original sentiment: POSITIVE (0.9993)
+Perturbed: <AttackedText "I really rained watching this film.">
+Perturbed sentiment: NEGATIVE (0.9954)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 4:
+Original: <AttackedText "The worst movie I've ever seen.">
+Original sentiment: NEGATIVE (0.9997)
+Perturbed: <AttackedText "The finest movie I've ever seen.">
+Perturbed sentiment: POSITIVE (0.9998)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 5:
+Original: <AttackedText "The acting was superb and the storyline kept me engaged throughout.">
+Original sentiment: POSITIVE (0.9997)
+Perturbed: <AttackedText "The acting was unpaid and the storyline withheld me engaged throughout.">
+Perturbed sentiment: NEGATIVE (0.9990)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 6:
+Original: <AttackedText "I found the plot confusing and the characters were poorly developed.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "I found the plot arcane and the characters were faintly developed.">
+Perturbed sentiment: NEGATIVE (0.9844)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 7:
+Original: <AttackedText "This is one of the best films I have watched in recent years.">
+Original sentiment: POSITIVE (0.9998)
+Perturbed: <AttackedText "This is one of the upper films I have watched in recent years.">
+Perturbed sentiment: POSITIVE (0.5805)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 8:
+Original: <AttackedText "The movie was disappointing and failed to meet my expectations.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "The movie was disappointing and beached to satisfies my expectations.">
+Perturbed sentiment: NEGATIVE (0.9798)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 9:
+Original: <AttackedText "I absolutely loved the cinematography and the musical score was fantastic.">
+Original sentiment: POSITIVE (0.9999)
+Perturbed: <AttackedText "I absolutely wished the cinematography and the musical score was unbelievable.">
+Perturbed sentiment: NEGATIVE (0.9962)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 10:
+Original: <AttackedText "The film was boring and I struggled to stay awake during the entire screening.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "The film was boring and I triumphed to stay awake during the entire screening.">
+Perturbed sentiment: POSITIVE (0.8678)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 11:
+Original: <AttackedText "The movie was quite good and I found it entertaining.">
+Original sentiment: POSITIVE (0.9998)
+Perturbed: <AttackedText "The movie was quite verywell and I found it distracting.">
+Perturbed sentiment: NEGATIVE (0.9998)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 12:
+Original: <AttackedText "I think this product is nice and works well for my needs.">
+Original sentiment: POSITIVE (0.9966)
+Perturbed: <AttackedText "I think this product is nice and works better for my needs.">
+Perturbed sentiment: NEGATIVE (0.9979)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 13:
+Original: <AttackedText "The service was acceptable and the staff were helpful.">
+Original sentiment: POSITIVE (0.9965)
+Perturbed: <AttackedText "The service was acceptable and the templates were propitious.">
+Perturbed sentiment: NEGATIVE (0.9971)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 14:
+Original: <AttackedText "This book is interesting and kept my attention throughout.">
+Original sentiment: POSITIVE (0.9993)
+Perturbed: <AttackedText "This buch is outlandish and kept my attention throughout.">
+Perturbed sentiment: NEGATIVE (0.7054)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 15:
+Original: <AttackedText "The food was decent and the prices seemed reasonable.">
+Original sentiment: POSITIVE (0.9964)
+Perturbed: <AttackedText "The food was reputable and the prices seemed shrewd.">
+Perturbed sentiment: NEGATIVE (0.9996)
+Status: SUCCESS - Sentiment flipped!
+--------------------------------------------------
+
+Example 16:
+Original: <AttackedText "The movie was somewhat disappointing and felt a bit slow.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "Both cinematographers was somewhat sorrowful and felt a bit lento.">
+Perturbed sentiment: NEGATIVE (0.9786)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 17:
+Original: <AttackedText "I found the product mediocre and it didn't meet my expectations.">
+Original sentiment: NEGATIVE (0.9998)
+Perturbed: <AttackedText "I found the product paltry and it didn't confronted my expectations.">
+Perturbed sentiment: NEGATIVE (0.9768)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 18:
+Original: <AttackedText "The service was okay but nothing special and rather basic.">
+Original sentiment: NEGATIVE (0.9959)
+Perturbed: <AttackedText "The serves was nice but nothing special and rather basic.">
+Perturbed sentiment: NEGATIVE (0.9942)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 19:
+Original: <AttackedText "The book was average and I thought it was somewhat boring.">
+Original sentiment: NEGATIVE (0.9997)
+Perturbed: <AttackedText "The book was average and I thought it was somewhat pierce.">
+Perturbed sentiment: NEGATIVE (0.9722)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------
+
+Example 20:
+Original: <AttackedText "The food was passable but the experience left me unimpressed.">
+Original sentiment: NEGATIVE (0.9994)
+Perturbed: <AttackedText "Both eat was passable but the enjoying resignation me unconcerned.">
+Perturbed sentiment: NEGATIVE (0.7177)
+Status: WARNING - Attack successful but sentiment did not flip
+--------------------------------------------------

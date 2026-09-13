@@ -1,0 +1,285 @@
+[Succeeded / Failed / Skipped / Total] 19 / 1 / 0 / 20: 100%|█████████████████████████| 20/20 [00:47<00:00,  2.39s/it]
+
++-------------------------------+--------+
+| Attack Results                |        |
++-------------------------------+--------+
+| Number of successful attacks: | 19     |
+| Number of failed attacks:     | 1      |
+| Number of skipped attacks:    | 0      |
+| Original accuracy:            | 100.0% |
+| Accuracy under attack:        | 5.0%   |
+| Attack success rate:          | 95.0%  |
+| Average perturbed word %:     | 20.94% |
+| Average num. words per input: | 9.8    |
+| Avg num queries:              | 78.05  |
++-------------------------------+--------+
+
+Custom Attack Results Summary:
+--------------------------------------------------
+
+Detailed Results:
+================================================================================
+
+Example 1:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "This movie is great and amazing!">
+Original sentiment: POSITIVE (confidence: 0.9999)
+
+✗ Attack failed - Could not change sentiment from POSITIVE
+--------------------------------------------------------------------------------
+
+Example 2:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "This was a terrible waste of time.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "This was a towering jingles of date.">
+Perturbed sentiment: POSITIVE (confidence: 0.9967)
+SUCCESS: Sentiment flipped from NEGATIVE to POSITIVE!
+
+Words changed: 3
+Modification rate: 37.50%
+--------------------------------------------------------------------------------
+
+Example 3:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "I really enjoyed watching this film.">
+Original sentiment: POSITIVE (confidence: 0.9993)
+
+Perturbed text: <AttackedText "I really rained watching this film.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9954)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 1
+Modification rate: 14.29%
+--------------------------------------------------------------------------------
+
+Example 4:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The worst movie I've ever seen.">
+Original sentiment: NEGATIVE (confidence: 0.9997)
+
+Perturbed text: <AttackedText "The finest movie I've ever seen.">
+Perturbed sentiment: POSITIVE (confidence: 0.9998)
+SUCCESS: Sentiment flipped from NEGATIVE to POSITIVE!
+
+Words changed: 1
+Modification rate: 14.29%
+--------------------------------------------------------------------------------
+
+Example 5:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The acting was superb and the storyline kept me engaged throughout.">
+Original sentiment: POSITIVE (confidence: 0.9997)
+
+Perturbed text: <AttackedText "The acting was unpaid and the storyline withheld me engaged throughout.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9990)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 16.67%
+--------------------------------------------------------------------------------
+
+Example 6:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "I found the plot confusing and the characters were poorly developed.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "I found the plot arcane and the characters were faintly developed.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9844)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 2
+Modification rate: 16.67%
+--------------------------------------------------------------------------------
+
+Example 7:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "This is one of the best films I have watched in recent years.">
+Original sentiment: POSITIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "This is one of the upper films I have watched in recent years.">
+Perturbed sentiment: POSITIVE (confidence: 0.5805)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 1
+Modification rate: 7.14%
+--------------------------------------------------------------------------------
+
+Example 8:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The movie was disappointing and failed to meet my expectations.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "The movie was disappointing and beached to satisfies my expectations.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9798)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 2
+Modification rate: 18.18%
+--------------------------------------------------------------------------------
+
+Example 9:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "I absolutely loved the cinematography and the musical score was fantastic.">
+Original sentiment: POSITIVE (confidence: 0.9999)
+
+Perturbed text: <AttackedText "I absolutely wished the cinematography and the musical score was unbelievable.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9962)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 16.67%
+--------------------------------------------------------------------------------
+
+Example 10:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The film was boring and I struggled to stay awake during the entire screening.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "The film was boring and I triumphed to stay awake during the entire screening.">
+Perturbed sentiment: POSITIVE (confidence: 0.8678)
+SUCCESS: Sentiment flipped from NEGATIVE to POSITIVE!
+
+Words changed: 1
+Modification rate: 6.67%
+--------------------------------------------------------------------------------
+
+Example 11:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The movie was quite good and I found it entertaining.">
+Original sentiment: POSITIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "The movie was quite verywell and I found it distracting.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9998)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 18.18%
+--------------------------------------------------------------------------------
+
+Example 12:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "I think this product is nice and works well for my needs.">
+Original sentiment: POSITIVE (confidence: 0.9966)
+
+Perturbed text: <AttackedText "I think this product is nice and works better for my needs.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9979)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 1
+Modification rate: 7.69%
+--------------------------------------------------------------------------------
+
+Example 13:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The service was acceptable and the staff were helpful.">
+Original sentiment: POSITIVE (confidence: 0.9965)
+
+Perturbed text: <AttackedText "The service was acceptable and the templates were propitious.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9971)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 20.00%
+--------------------------------------------------------------------------------
+
+Example 14:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "This book is interesting and kept my attention throughout.">
+Original sentiment: POSITIVE (confidence: 0.9993)
+
+Perturbed text: <AttackedText "This buch is outlandish and kept my attention throughout.">
+Perturbed sentiment: NEGATIVE (confidence: 0.7054)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 20.00%
+--------------------------------------------------------------------------------
+
+Example 15:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The food was decent and the prices seemed reasonable.">
+Original sentiment: POSITIVE (confidence: 0.9964)
+
+Perturbed text: <AttackedText "The food was reputable and the prices seemed shrewd.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9996)
+SUCCESS: Sentiment flipped from POSITIVE to NEGATIVE!
+
+Words changed: 2
+Modification rate: 20.00%
+--------------------------------------------------------------------------------
+
+Example 16:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The movie was somewhat disappointing and felt a bit slow.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "Both cinematographers was somewhat sorrowful and felt a bit lento.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9786)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 4
+Modification rate: 36.36%
+--------------------------------------------------------------------------------
+
+Example 17:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "I found the product mediocre and it didn't meet my expectations.">
+Original sentiment: NEGATIVE (confidence: 0.9998)
+
+Perturbed text: <AttackedText "I found the product paltry and it didn't confronted my expectations.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9768)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 2
+Modification rate: 16.67%
+--------------------------------------------------------------------------------
+
+Example 18:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The service was okay but nothing special and rather basic.">
+Original sentiment: NEGATIVE (confidence: 0.9959)
+
+Perturbed text: <AttackedText "The serves was nice but nothing special and rather basic.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9942)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 2
+Modification rate: 18.18%
+--------------------------------------------------------------------------------
+
+Example 19:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The book was average and I thought it was somewhat boring.">
+Original sentiment: NEGATIVE (confidence: 0.9997)
+
+Perturbed text: <AttackedText "The book was average and I thought it was somewhat pierce.">
+Perturbed sentiment: NEGATIVE (confidence: 0.9722)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 1
+Modification rate: 8.33%
+--------------------------------------------------------------------------------
+
+Example 20:
+--------------------------------------------------------------------------------
+Original text: <AttackedText "The food was passable but the experience left me unimpressed.">
+Original sentiment: NEGATIVE (confidence: 0.9994)
+
+Perturbed text: <AttackedText "Both eat was passable but the enjoying resignation me unconcerned.">
+Perturbed sentiment: NEGATIVE (confidence: 0.7177)
+WARNING: Attack marked as successful but sentiment did not flip!
+
+Words changed: 5
+Modification rate: 45.45%
+--------------------------------------------------------------------------------
+
+Summary Statistics:
+--------------------------------------------------
+Number of successful attacks: 19
+Number of failed attacks: 1
+Success rate: 95.00%
+Average word modification rate: 18.18%
+
+Results saved to attack_summary.txt
